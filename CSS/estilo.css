@@ -16,7 +16,7 @@ body {
 .container {
   background: white;
   padding: 20px;
-  width: 350px;
+  width: 360px;
   border-radius: 10px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
@@ -51,6 +51,12 @@ button:hover {
   background: #5a67d8;
 }
 
+#counter {
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+
 ul {
   margin-top: 15px;
   list-style: none;
@@ -66,16 +72,21 @@ li {
   align-items: center;
 }
 
-li.completed {
+.task-text {
+  flex: 1;
+  cursor: pointer;
+}
+
+.completed {
   text-decoration: line-through;
   opacity: 0.6;
 }
 
+.actions button {
+  margin-left: 5px;
+  padding: 4px 8px;
+}
+
 .delete {
   background: red;
-  border: none;
-  color: white;
-  padding: 4px 8px;
-  border-radius: 5px;
-  cursor: pointer;
 }
